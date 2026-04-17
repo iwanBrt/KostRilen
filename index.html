@@ -9,20 +9,26 @@
     <!-- Font Awesome untuk ikon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts: Playfair Display untuk kesan mewah, Montserrat untuk keterbacaan -->
-    <!-- Google Fonts: Playfair Display untuk kesan mewah, Montserrat untuk keterbacaan -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
         h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
         .bg-luxury { background-color: #0f172a; } /* Deep Navy */
+        .text-luxury { color: #0f172a; }
         .text-gold { color: #d4af37; }
         .bg-gold { background-color: #d4af37; }
         .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); transition: all 0.4s ease; }
         .glass-nav.scrolled { background: rgba(15, 23, 42, 0.95); border-bottom-color: #1e293b; }
         .glass-nav.scrolled span, .glass-nav.scrolled a { color: #f8fafc; }
         .glass-nav.scrolled a:hover { color: #d4af37; }
-        .glass-nav.scrolled .bg-luxury { background: #d4af37; }
-        .glass-nav.scrolled .text-gold { color: #0f172a; }
+        .glass-nav.scrolled .bg-luxury { background: #d4af37 !important; }
+        .glass-nav.scrolled .text-gold { color: #0f172a !important; }
+        .glass-nav.scrolled .btn-premium:hover { background: #0f172a !important; color: #ffffff !important; }
+        
+        /* Ensure hover text visibility for custom utility classes */
+        .hover\:text-luxury:hover { color: #0f172a !important; }
+        .hover\:text-gold:hover { color: #d4af37 !important; }
+        .hover\:text-white:hover { color: #ffffff !important; }
 
         /* Smooth Reveal Animations */
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -72,7 +78,7 @@
                 <a href="#fasilitas" class="hover:text-gold transition">Fasilitas</a>
                 <a href="#ulasan" class="hover:text-gold transition">Ulasan</a>
             </div>
-            <a href="https://wa.me/6281263851985" class="btn-premium bg-luxury text-gold px-6 py-2.5 rounded-full text-xs font-bold tracking-widest hover:bg-slate-800 transition shadow-lg uppercase">
+            <a href="https://wa.me/6281263851985" class="btn-premium bg-luxury text-gold px-6 py-2.5 rounded-full text-xs font-bold tracking-widest hover:bg-slate-800 hover:text-white transition shadow-lg uppercase">
                 Reservasi
             </a>
         </div>
@@ -190,7 +196,7 @@
                 <!-- Kamar 3: Premier Balcony -->
                 <div class="group card-hover bg-white rounded-3xl overflow-hidden shadow-2xl border border-slate-100">
                     <div class="relative h-72 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1505691938895-1758d7eaa511?auto=format&fit=crop&q=60&w=600" alt="Premier Balcony" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNAlBo6VPWPf3ishOJYjXc7ex8N99kNxgWdg&s" alt="Premier Balcony" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" loading="lazy">
                         <div class="absolute top-4 right-4 bg-red-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase">Terbatas</div>
                     </div>
                     <div class="p-8">
